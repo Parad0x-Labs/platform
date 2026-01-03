@@ -19,6 +19,11 @@ Nebula Media is our media optimization pipeline for images/video, focused on hig
 
 ---
 
+## 📦 Products
+*   **[Nebula Media](/docs/products/nebula-media.md)** — High-efficiency visual conduction pillar.
+
+---
+
 ## 📂 What this repository is
 *   **Public Technical Overview:** High-level concepts and vision for the Parad0x ecosystem.
 *   **Architectural Diagrams:** Mermaid-based visualizations of data flow and system components.
