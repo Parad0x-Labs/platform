@@ -2,6 +2,8 @@
 
 ![Status: Public Overview](https://img.shields.io/badge/Status-Public_Overview-cyan?style=flat-square)
 ![Conduction: Verified](https://img.shields.io/badge/Conduction-Verified-00ff41?style=flat-square)
+![License: All Rights Reserved](https://img.shields.io/badge/License-All_Rights_Reserved-white?style=flat-square)
+![Docs: Complete](https://img.shields.io/badge/Docs-Complete-blue?style=flat-square)
 
 Welcome to the public technical overview for **Parad0x Labs**. This repository serves as the central hub for technical documentation, architectural diagrams, and benchmark methodologies for our Sovereign OS ecosystem.
 

@@ -7,7 +7,7 @@ As infrastructure scales, the volume of telemetry data (logs, traces, metrics) g
 
 ## The Approach: Compression-Native Observability
 Parad0x Labs solves this by building the storage layer **inside** the compression engine. Our architecture focuses on:
-*   **Compression-First Storage:** Achieving 10x–50x ratios without losing a single bit of data.
+*   **Compression-First Storage:** Achieving 10x–50x ratios without losing a single bit of data. Specific performance varies by dataset and workload; see documented methodology for reproducibility.
 *   **Searchable Archives:** Using block-level pruning (Bloom filters/Zone maps) to allow direct querying of compressed data without full decompression.
 *   **Verification:** Mandatory Roundtrip Verification (MRTV) ensures data integrity at every step.
 
