@@ -6,6 +6,7 @@ This directory contains the public-facing technical documentation for the Parad0
 
 *   **[Overview](overview.md)** — High-level problem statement and our approach to compression-native observability.
 *   **[Sovereign Vision](vision-null.md)** — The architectural philosophy behind the $NULL ecosystem.
+*   **[Trust & Verification](trust/local-verification.md)** — How we enable bit-perfect offline restoration and local trust.
 *   **[Products](products/nebula-media.md)** — Detailed product breakdowns and links.
 *   **[Architecture & Diagrams](diagrams/README.md)** — Visual representations of our data pipelines and search layers.
 *   **[Benchmarks](benchmarks/README.md)** — Methodologies and illustrative results for our conduction engines.

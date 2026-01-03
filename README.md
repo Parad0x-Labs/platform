@@ -38,6 +38,7 @@ Nebula Media is our media optimization pipeline for images/video, focused on hig
 
 ## 🗺️ Quick Navigation
 *   [Technical Overview](/docs/overview.md)
+*   [Local Verification & Trust](/docs/trust/local-verification.md)
 *   [Sovereign Vision](/docs/vision-null.md)
 *   [Architecture Diagrams](/docs/diagrams/README.md)
 *   [Benchmark Methodology](/docs/benchmarks/methodology.md)
