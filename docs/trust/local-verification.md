@@ -12,6 +12,8 @@ To facilitate this, we provide the **Liquefy Sealed Decoder Appliance**—a hard
 - Verify cryptographic hashes of original vs. restored data.
 - Run in completely air-gapped environments (`--network=none`).
 
+Liquefy provides a sealed, fail-closed decoder appliance for offline, customer-side verification.
+
 ## Why We Use Sealed Binaries
 We provide signed, versioned binaries rather than source code for two reasons:
 1. **IP Protection:** To safeguard the proprietary "secret sauce" that allows for 10x–50x compression ratios on high-entropy data.
