@@ -4,7 +4,7 @@
 No. The core conduction engines (Liquefy and Nebula) are proprietary technologies. This repository provides public documentation, diagrams, and benchmark methodologies. We provide open-source SDKs for decompression to ensure customers always have access to their data.
 
 ### 2. Can I try the platform?
-Yes. You can experience the latest Conductor live on our website. For full enterprise deployment or custom engine access, please request a demo via our contact page.
+Yes. You can experience the latest Conductor live on our website. For full enterprise deployment or custom engine access, please request a demo via email (**hello@parad0xlabs.com**) or DM us on X (**[@Parad0x_Labs](https://x.com/Parad0x_Labs)**).
 
 ### 3. How does it compare to zstd or Splunk/Elasticsearch?
 *   **vs. Generic Compression (zstd):** While we use zstd for block-level storage, our engines use specialized "conduction" heuristics that understand log structures (JSON, Apache, SQL, etc.), often doubling or tripling the ratios of raw zstd.

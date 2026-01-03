@@ -39,8 +39,9 @@ Nebula Media is our media optimization pipeline for images/video, focused on hig
 ---
 
 ## 📡 Contact
-For enterprise licensing, partnership requests, or technical support, please contact us via our website:
-**[https://parad0xlabs.com](https://parad0xlabs.com)**
+For enterprise licensing, partnership requests, or technical support, please contact us via email or X (Twitter):
+*   **Email:** [hello@parad0xlabs.com](mailto:hello@parad0xlabs.com)
+*   **X (Twitter):** [@Parad0x_Labs](https://x.com/Parad0x_Labs)
 
 © 2026 Parad0x Labs. All rights reserved. 🚀
 
