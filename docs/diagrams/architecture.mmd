@@ -1,0 +1,32 @@
+%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#002', 'primaryTextColor': '#fff', 'primaryBorderColor': '#00ff41', 'lineColor': '#ffffff', 'secondaryColor': '#111', 'tertiaryColor': '#111' }}}%%
+graph TD
+    subgraph "Ingest Layer"
+        A[Raw Logs/Streams] --> B{Auto-Sniffer}
+        B -->|JSON| C[JSON Processor]
+        B -->|Text| D[Universal Processor]
+        B -->|Binary| E[Media/Binary Engine]
+    end
+
+    subgraph "Compression Engine (Blackbox)"
+        C & D & E --> F[Normalization]
+        F --> G[Columnar Transpose]
+        G --> H[Entropy Encoding]
+    end
+
+    subgraph "Storage & Indexing"
+        H --> I[Compressed Archive]
+        I --> J[Bloom Filter Index]
+        I --> K[Zone Map Metadata]
+    end
+
+    subgraph "Query Engine"
+        L[Search Request] --> M{Metadata Pruning}
+        M -->|Candidate Block| N[Block Decompression]
+        M -->|Skipped Block| O[Zero-Load Skip]
+        N --> P[Result Extraction]
+    end
+
+    subgraph "Verification"
+        P --> Q[SHA256 Integrity Check]
+        Q --> R[Verified Results]
+    end

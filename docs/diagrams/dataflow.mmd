@@ -1,0 +1,25 @@
+%%{init: {'theme': 'dark', 'themeVariables': { 'lineColor': '#ffffff', 'textColor': '#ffffff', 'mainBkg': '#111', 'nodeBorder': '#ffffff' }}}%%
+sequenceDiagram
+    autonumber
+    participant User
+    participant Ingest
+    participant Engine
+    participant Vault
+    participant Search
+
+    Note over User, Vault: [1] Archival Process
+    User->>Ingest: Upload Raw Data
+    Ingest->>Engine: Normalization & Squeeze
+    Engine->>Vault: Store Encrypted Archive (.liq)
+    Engine-->>User: Return Archive ID
+
+    Note over User, Search: [2] Query Process
+    User->>Search: Search Query (q="error")
+    Search->>Vault: Fetch Metadata/Bloom
+    Vault-->>Search: Return Candidate Blocks
+    Search->>Engine: Selective Block Decode
+    Engine-->>User: Return Matches with Context
+
+    Note over Engine, User: [3] Real-time Append (Tail)
+    Engine->>Vault: Append to Archive
+    Vault-->>User: Live Conduction Update
