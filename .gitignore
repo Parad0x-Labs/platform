@@ -1,0 +1,28 @@
+# Parad0x Labs - Platform .gitignore
+
+# Global broad ignores are avoided for audit transparency.
+# Targeted internal ignores only.
+
+INTERNAL_AUDIT/**/*.txt
+INTERNAL_AUDIT/**/*.log
+MISSION_LOG_*
+
+# Project specific logs (ignored by prefix to keep root clean)
+api_*.log
+backend_*.log
+frontend_*.log
+test_*.log
+quantum_*.log
+*.sqlite
+*.zip
+*.tar.gz
+
+# Docker / Environment
+.env
+.env.local
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
